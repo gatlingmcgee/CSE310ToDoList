@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE310ToDoList</title>
+    <link rel="stylesheet" href="styles/todo.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <p>Single click a task to strike or unstrike through.</p>
+    <p>Double click to edit a task.</p>
+
+    <label for="todoInput">To-Do:</label>
+    <input type="text" id="todoInput" name="todoInput">
+
+    <label for="deadlineInput">Deadline:</label>
+    <input type="date" id="deadlineInput" name="deadlineInput">
+
+    <button id="button">Enter Task</button>
+
+    <ul id="todoList"></ul>
+
+    <!-- Luxon Library -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js"></script>
+    <script src="scripts/todo.js"></script>
+</body>
+</html>

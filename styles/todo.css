@@ -1,0 +1,93 @@
+:root {
+    --background-color: #e5b966;
+    --secondary-color: #5e331c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+h1, p {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 250px;
+    padding: 8px 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+    color: var(--secondary-color);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    color: var(--secondary-color);
+}
+
+li {
+    width: 100%;
+    text-align: center;
+    padding: 8px 10px;
+    margin: 5px 0;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal; 
+    font-size: 20px;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+#todoList button {
+    font-size: 0.75rem;
+    padding: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
