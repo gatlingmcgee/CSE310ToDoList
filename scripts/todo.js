@@ -203,7 +203,7 @@ function saveEdit(id, newText) {
 
 // Cancels edit without saving
 function cancelEdit(id) {
-    // Reset edit to false without saving
+    // Reset edit to false without saving (undo)
     todos = todos.map(todo =>
         todo.id === id ? { ...todo, editing: false } : todo
     );
