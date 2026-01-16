@@ -18,7 +18,7 @@ if (storedTodos) {
     renderTodos();
 }
 
-// Save tasks to localStorage
+// Save any tasks to localStorage
 function saveTodos() {
     localStorage.setItem("todos", JSON.stringify(todos));
 }
