@@ -23,7 +23,7 @@ function saveTodos() {
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// Enter task button
+// Create new task button
 button.addEventListener("click", () => {
     try {
         addTodo();
@@ -92,7 +92,7 @@ function renderTodos() {
 }
 
 function renderTodoRecursive(index) {
-    // Stops recursion when all tasks are processed
+    // Stops recursion when all tasks are processed - base case
     if (index >= todos.length) return;
 
     const todo = todos[index];
@@ -119,7 +119,7 @@ function renderTodoRecursive(index) {
             }
         });
 
-        // Keeps the edit functionality clean
+        // Keeps the edit functionality clean if you click outside the input
         editInput.addEventListener("blur", () => cancelEdit(todo.id));
 
         li.appendChild(editInput);
